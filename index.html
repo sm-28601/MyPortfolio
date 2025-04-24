@@ -2,129 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Maurya - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="logo">
-            <img src="image/logo.png" alt="Logo">
-        </div>
-        <ul class="nav-menu">
+        <div class="logo">SM</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#achievement">Achievement</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
-    <section class="hero-section">
-        <div class="hero-text">
-            <h2>Hello, Welcome </h2>
-            <h1> I'm <span class="highlight">Sahil Maurya</span></h1><br>
-            <button class="cta-button">About Me</button>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/sahil-maurya-9b7544287/"><img src="image/linkedin.png" alt="LinkedIn"></a>
-              <a href="https://github.com/sm-28601"><img src="image/github.png" alt="GitHub"></a>
-              <a href="https://leetcode.com/u/sahilmaurya/"><img src="image/leetcode.png" alt="Leetcode"></a>
-          </div>
-        </div>
-        <div class="hero-image">
-            <img src="image/pic3.jpg" alt="Profile Image">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">Sahil Maurya</span></h1>
+            <p class="subtitle">Web Developer & Problem Solver</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sahil-maurya-9b7544287/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sm-28601" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://leetcode.com/u/sahilmaurya/" target="_blank"><i class="fas fa-code"></i></a>
+            </div>
         </div>
     </section>
-    <section id="about" class="about-section">
-      <div class="about-content">
-          <h2>About Me</h2>
-          <p>Hello! I am <strong>Sahil Maurya</strong>, a second-year student at <strong>BIT Bangalore</strong> with a passion for web development and problem-solving. I enjoy creating interactive and efficient web solutions, and I am constantly striving to improve my skills and take on new challenges. Welcome to my portfolio, where you can explore my journey, projects, and accomplishments in the tech world!</p>
-      </div>
-  </section>
-  <section id="skills" class="skills-section">
-    <h2>My Skills</h2>
-    <div class="skills-container">
-        <div class="skill-card">
-            <img src="image/c-.png" alt="C++ Logo">
-            <h3>C++</h3>
-        </div>
-        <div class="skill-card">
-            <img src="image/letter-c.png" alt="C Logo">
-            <h3>C</h3>
-        </div>
-        <div class="skill-card">
-            <img src="image/python.png" alt="Python Logo">
-            <h3>Python</h3>
-        </div>
-        <div class="skill-card">
-            <img src="image/html.png" alt="HTML Logo">
-            <h3>HTML</h3>
-        </div>
-        <div class="skill-card">
-            <img src="image/css-3.png" alt="CSS Logo">
-            <h3>CSS</h3>
-        </div>
-    </div>
-</section>
-<section id="project" class="projects-section">
-  <h2>Projects</h2>
-  <div class="projects-container">
-      <div class="project-card">
-          <h3>Tic Tac Toe Game</h3>
-          <a href="https://github.com/sm-28601/Tic-Tac-Toe-Game"><img src="image/github.png" alt=""></a>
-          <p>A simple command-line Tic Tac Toe game built using Python. This game allows two players to take turns placing their marks ('X' and 'O') on a 3x3 grid until one player wins or the game ends in a draw.</p>
-      </div>
-      <div class="project-card">
-          <h3>Dose Calculator App</h3>
-          <a href="https://github.com/sm-28601/DoseCalculatorApp"><img src="image/github.png" alt=""></a>
-          <p>A simple C++ command-line application for calculating medicine doses based on user inputs. The app helps users determine accurate dosage based on predefined medical formulas or criteria.</p>
-      </div>
-      <div class="project-card">
-          <h3>Tacos Website</h3>
-          <a href="https://github.com/sm-28601/tacos_website"><img src="image/github.png" alt=""></a>
-          <p>This is a Tacos website made using HTML only. This is my first project in my full stack developer journey </p>
-      </div>
-  </div>
-</section>
 
-<section id="achievement" class="achievements-section">
-  <h2>Achievements</h2>
-  <div class="achievements-container">
-      <div class="achievement-card">
-          <img src="image/programforeveryone.png" alt="certificate" height="200px" width="250px">
-      </div>
-      <div class="achievement-card">
-        <img src="image/data.png" alt="certificate" height="200px" width="250px">
-      </div>
-      <div class="achievement-card">
-        <img src="image/html.jpg" alt="certificate" height="200px" width="250px">
-      </div>
-  </div>
-</section>
-<section class="contact-section" id="contact">
-  <div class="contact-intro">
-    <h2 class="contact-title">Contact Me</h2>
-  </div>
-    <div class="form-group-container">
-      <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
-      </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
-      </div>
-      
-      <div class="form-group">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
-      </div>
-    </div>
-    <button class="form-submit" type="submit">Send Message</button>
-  </form>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I am a second-year student at <strong>BIT Bangalore</strong> with a passion for web development and problem-solving. I enjoy creating interactive and efficient web solutions, and I am constantly striving to improve my skills and take on new challenges.</p>
+                <p>Welcome to my portfolio, where you can explore my journey, projects, and accomplishments in the tech world!</p>
+            </div>
+            <div class="about-image">
+                <img src="./image/pic2.jpg" alt="Sahil Maurya">
+            </div>
+        </div>
+    </section>
 
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-cpp"></i>
+                <h3>C++</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>C</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                
+                <div class="project-content">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>A simple command-line Tic Tac Toe game built using Python. This game allows two players to take turns placing their marks ('X' and 'O') on a 3x3 grid until one player wins or the game ends in a draw.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                
+                <div class="project-content">
+                    <h3>Dose Calculator App</h3>
+                    <p>A simple C++ command-line application for calculating medicine doses based on user inputs. The app helps users determine accurate dosage based on predefined medical formulas or criteria.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                
+                <div class="project-content">
+                    <h3>Tacos Website</h3>
+                    <p>This is a Tacos website made using HTML only. This is my first project in my full stack developer journey.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <h2>Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+               
+                <img src="./image/data.png" alt="Certificate 1" class="certificate-img">
+            </div>
+            <div class="achievement-card">
+                
+                <img src="./image/programforeveryone.png" alt="Certificate 3" class="certificate-img">
+            </div>
+            <div class="achievement-card">
+                
+                <img src="./image/html.jpg" alt="Certificate 3" class="certificate-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Sahil Maurya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 
